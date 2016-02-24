@@ -1,0 +1,10 @@
+.header {
+    @media only screen and (max-width: 999px) {
+        padding: 25px 0;
+    }
+
+    @media only screen and (min-width: 1000px) {
+        position: relative;
+        height: 170px;
+    }
+}

@@ -1,0 +1,115 @@
+.banner {
+    @include clearfix;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    &.home {
+        .join_us {
+            background: #315b81;
+            background: linear-gradient(darken(#315b81, 3%), #315b81);
+
+            h2 {
+                color: #7ba8d6;
+                font-weight: 300;
+                text-transform: uppercase;
+
+                @include font_smoothing;
+            }
+
+            ul {
+                color: #fffcf5;
+
+                li {
+                    position: relative;
+                    margin: 25px 0;
+                    padding: 0 0 0 45px;
+                    line-height: 1.25;
+
+                    &:last-child {
+                        margin-bottom: 10px;
+                    }
+
+                    .icon {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        font-size: 25px;
+                    }
+
+                    a {
+                        color: #7ba8d6;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 999px) {
+        &.home {
+            img {
+                margin-bottom: 10px;
+            }
+
+            .join_us {
+                padding: 25px;
+
+                h2 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        &.home {
+            img {
+                float: left;
+                width: 700px;
+                margin-right: 10px;
+            }
+
+            .join_us {
+                float: left;
+                width: 250px;
+                height: 350px;
+                padding: 25px 25px;
+
+                h2 {
+                    font-size: 28px;
+
+                    span {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1280px) {
+        &.home {
+            img {
+                width: 920px;
+                margin-right: 10px;
+            }
+
+            .join_us {
+                width: 270px;
+                height: 460px;
+                padding: 30px 25px;
+
+                h2 {
+                    margin: 0 0 35px 0;
+                    font-size: 33px;
+                }
+            }
+        }
+    }
+}

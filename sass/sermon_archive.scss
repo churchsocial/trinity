@@ -1,0 +1,91 @@
+.church_social_sermon_archive {
+    form {
+        margin: 0 0 35px 0;
+
+        @include clearfix;
+
+        label {
+            display: block;
+            float: left;
+            padding: 0 25px;
+            height: 30px;
+            line-height: 30px;
+            color: #fffcf5;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+            background: #c9c2b6;
+            border-radius: 15px 0 0 15px;
+
+            @media only screen and (max-width: 767px) {
+                padding: 0 10px;
+            }
+        }
+
+        select {
+            display: block;
+            float: left;
+            height: 30px;
+            width: 300px;
+            padding: 0 10px 0 15px;
+            outline: none;
+            color: #97846c;
+            background: white;
+            border: solid 1px #c9c2b6;
+            -webkit-appearance: none;
+            border-radius: 0 15px 15px 0;
+
+            @media only screen and (max-width: 767px) {
+                width: 150px;
+            }
+        }
+
+        button {
+            display: block;
+            float: left;
+            margin: 0 0 0 5px;
+            padding: 0 35px;
+            height: 30px;
+            border: 0;
+            outline: none;
+            color: white;
+            background: #3168a3;
+            border-radius: 15px;
+
+            @media only screen and (max-width: 767px) {
+                padding: 0 15px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        overflow: scroll;
+    }
+
+    table {
+        margin: 25px 0;
+
+        tr {
+            border-top: solid 1px lighten(#dad0ba, 5%);
+
+            th {
+                padding: 5px;
+                font-family: "MuseoSlab";
+                font-weight: 500;
+                font-size: 18px;
+                color: #7c725d;
+            }
+
+            td {
+                padding: 10px 5px;
+                font-size: 14px;
+                line-height: 1.25;
+
+                &.date,
+                &.passage {
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}

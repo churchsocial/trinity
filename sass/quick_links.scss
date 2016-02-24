@@ -1,0 +1,88 @@
+.quick_links {
+    font-size: 0;
+
+    @include clearfix;
+
+    li {
+        a {
+            position: relative;
+            display: block;
+            width: 30px;
+            height: 30px;
+            padding: 5px 0 0 0;
+            text-align: center;
+            color: #fffcf5;
+            font-size: 20px;
+            border-radius: 15px;
+            background: #c9c2b6;
+
+            &.member_login {
+                width: auto;
+                padding: 10px 15px 0 15px;
+                font-weight: 700;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+
+            &:hover {
+                background: darken(#c9c2b6, 10%);
+
+                &:after {
+                    position: absolute;
+                    left: -50%;
+                    width: 70px;
+                    top: 36px;
+                    display: block;
+                    font-size: 12px;
+                    line-height: 1;
+                    color: #97846c;
+                    text-transform: none;
+                }
+            }
+
+            &.icon-facebook {
+                &:hover {
+                    &:after {
+                        content: "Facebook";
+                    }
+                }
+            }
+
+            &.icon-twitter {
+                &:hover {
+                    &:after {
+                        content: "Twitter";
+                    }
+                }
+            }
+
+            &.icon-instagram {
+                &:hover {
+                    &:after {
+                        content: "Instagram";
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 999px) {
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin: 5px 2px 0 2px;
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        position: absolute;
+        right: 0;
+        top: 30px;
+
+        li {
+            float: left;
+            margin: 0 0 0 7px;
+        }
+    }
+}

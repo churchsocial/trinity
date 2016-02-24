@@ -1,0 +1,30 @@
+.sub_menu {
+    font-weight: 500;
+
+    li {
+        margin: 10px 0 20px 0;
+
+        a {
+            color: #97846c;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &.selected {
+            a {
+                color: #3168a3;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding: 0 0 10px 0;
+        border-bottom: solid 1px #dad0ba;
+
+        li {
+            margin: 10px 0 10px 0;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.copyright {
+    margin: 50px 0;
+    padding: 5px;
+    color: #9f968a;
+    font-size: 14px;
+    text-align: center;
+    background: #efebe1;
+
+    span {
+        display: inline-block;
+        margin: 10px 0;
+    }
+
+    a {
+        color: #7d7161;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        span {
+            display: block;
+        }
+    }
+}
