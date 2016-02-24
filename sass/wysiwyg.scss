@@ -34,6 +34,7 @@
         font-family: "MuseoSlab";
         font-weight: 500;
         font-size: 20px;
+        line-height: 1.25;
         color: #7c725d;
 
         &:first-child {
@@ -43,6 +44,29 @@
         &:last-child {
             margin-bottom: 0;
         }
+    }
+
+    h3 {
+        margin: 25px 0 15px 0;
+        font-family: "MuseoSlab";
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.25;
+        color: #7c725d;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    h4 {
+        @extend h3;
+
+        font-size: 16px;
     }
 
     ul,
