@@ -1,0 +1,24 @@
+.button {
+    display: inline-block;
+    padding: 0 35px;
+    height: 30px;
+    border: 0;
+    outline: none;
+    color: #fffcf4;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #3168a3;
+    border-radius: 15px;
+
+    &:hover {
+        text-decoration: none;
+        background: darken(#3168a3, 5%);
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding: 0 15px;
+    }
+}
