@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php wp_title('|', true, 'right').bloginfo('name') ?></title>
     <meta name="description" content="<?php bloginfo('description')?>">
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url') ?>/css/all.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url') ?>/css/all.css?v=<?=wp_get_theme()->get('Version')?>" />
     <script src="<?php bloginfo('template_url') ?>/js/respond.js"></script>
     <?php wp_head() ?>
 </head>
 
 <body>
+
+
 
 <div class="center">
 
@@ -47,7 +49,7 @@
             </a>
         <?php else: ?>
             <a class="logo text" href="/">
-                <?php bloginfo('blogname')?>
+                <span><?php bloginfo('blogname')?></span>
             </a>
         <?php endif ?>
 

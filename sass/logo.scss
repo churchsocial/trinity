@@ -1,32 +1,65 @@
 .logo {
-    @media only screen and (max-width: 999px) {
-        img {
-            display: block;
-            margin: 25px auto 0 auto;
-            width: 100%;
-            height: auto;
-            max-width: 380px;
+    &.text {
+        display: block;
+
+        span {
+            color: black;
+            font-family: "MuseoSlab";
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 1;
+        }
+
+        @media only screen and (max-width: 999px) {
+            margin: 25px 0 0 0;
+            text-align: center;
+        }
+
+        @media only screen and (min-width: 1000px) {
+            position: absolute;
+            left: 25px;
+            top: 25px;
+            height: 130px;
+            width: 380px;
+            line-height: 130px;
+
+            span {
+                display: inline-block;
+                vertical-align: middle;
+            }
         }
     }
 
-    @media only screen and (min-width: 1000px) {
-        position: absolute;
-        left: 25px;
-        top: 25px;
-        height: 130px;
-        width: 380px;
-        font-size: 0;
-
-        .helper {
-            display: inline-block;
-            height: 100%;
-            vertical-align: middle;
+    &.image {
+        @media only screen and (max-width: 999px) {
+            img {
+                display: block;
+                margin: 25px auto 0 auto;
+                width: 100%;
+                height: auto;
+                max-width: 380px;
+            }
         }
 
-        img {
-            vertical-align: middle;
-            max-height: 100%;
-            max-width: 100%;
+        @media only screen and (min-width: 1000px) {
+            position: absolute;
+            left: 25px;
+            top: 25px;
+            height: 130px;
+            width: 380px;
+            font-size: 0;
+
+            .helper {
+                display: inline-block;
+                height: 100%;
+                vertical-align: middle;
+            }
+
+            img {
+                vertical-align: middle;
+                max-height: 100%;
+                max-width: 100%;
+            }
         }
     }
 }
