@@ -55,7 +55,7 @@
 
         <?php wp_nav_menu([
             'theme_location' => 'main_menu',
-            'depth' => 1,
+            'depth' => 2,
             'menu_class' => 'menu',
             'container' => '',
         ]) ?>
