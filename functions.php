@@ -37,7 +37,7 @@ add_filter(
 
 // Set content width
 if (!isset($content_width)) {
-    $content_width = 930;
+    $content_width = 880;
 }
 
 // Setup sub menu
@@ -77,7 +77,7 @@ function get_sub_menu()
         }
     }
 
-    if (count($menu_items) === 1) {
+    if (count($menu_items) < 2) {
         return '';
     }
 

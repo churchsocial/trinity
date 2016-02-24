@@ -28,21 +28,20 @@
             </a>
         <?php endif ?>
 
-        <!--
         <ul class="quick_links">
             <?php if (get_theme_mod('facebook')): ?>
                 <li>
-                    <a class="socicon socicon-facebook" href="<?=get_theme_mod('facebook')?>">Facebook</a>
+                    <a class="icon icon-facebook" href="<?=get_theme_mod('facebook')?>"></a>
                 </li>
             <?php endif ?>
             <?php if (get_theme_mod('twitter')): ?>
                 <li>
-                    <a class="socicon socicon-twitter" href="<?=get_theme_mod('twitter')?>">Twitter</a>
+                    <a class="icon icon-twitter" href="<?=get_theme_mod('twitter')?>"></a>
                 </li>
             <?php endif ?>
             <?php if (get_theme_mod('instagram')): ?>
                 <li>
-                    <a class="socicon socicon-instagram" href="<?=get_theme_mod('instagram')?>">Instagram</a>
+                    <a class="icon icon-instagram" href="<?=get_theme_mod('instagram')?>"></a>
                 </li>
             <?php endif ?>
             <?php if (get_theme_mod('member_login')): ?>
@@ -51,8 +50,6 @@
                 </li>
             <?php endif ?>
         </ul>
-
-        -->
 
         <?php wp_nav_menu([
             'theme_location' => 'main_menu',
@@ -98,25 +95,21 @@
         <?php endif ?>
     <?php endif ?>
 
-    <div class="content_heading">
-        <div class="section">
-            <?php if (get_sub_menu()): ?>
-                <?=get_section_name()?>
-            <?php endif ?>
-        </div>
-        <h1 class="title">
-            <a href="<?php the_permalink(); ?>">
-                <?php the_title(); ?>
-            </a>
-        </h1>
-    </div>
+    <div class="content <?=get_sub_menu() ? 'with_sub_menu' : 'without_sub_menu'?>">
 
-    <div class="content">
-        <?php if (get_sub_menu()): ?>
-            <?=get_sub_menu()?>
-        <?php else: ?>
-            <ul class="sub_menu">
-                <li>&nbsp;</li>
-            </ul>
-        <?php endif ?>
+        <div class="heading">
+            <div class="section">
+                <?php if (get_sub_menu()): ?>
+                    <?=get_section_name()?>
+                <?php endif ?>
+            </div>
+            <h1 class="title">
+                <a href="<?php the_permalink(); ?>">
+                    <?php the_title(); ?>
+                </a>
+            </h1>
+        </div>
+
+        <?=get_sub_menu()?>
+
         <div class="wysiwyg">
