@@ -13,8 +13,6 @@
 
 <body>
 
-
-
 <div class="center">
 
     <div class="header">
@@ -53,11 +51,6 @@
             </a>
         <?php endif ?>
 
-        <?php wp_nav_menu([
-            'theme_location' => 'main_menu',
-            'depth' => 2,
-            'menu_class' => 'menu',
-            'container' => '',
-        ]) ?>
+        <?=get_main_menu(2)?>
 
     </div>

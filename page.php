@@ -52,7 +52,9 @@
                 </h1>
             </div>
 
-            <?=get_sub_menu()?>
+            <div class="sub_menu">
+                <?=get_sub_menu()?>
+            </div>
 
             <div class="wysiwyg">
                 <?php the_content(); ?>
