@@ -1,0 +1,42 @@
+.church_social_calendar {
+    &__controls {
+        margin: 25px 0;
+    }
+
+    &__controls_link {
+        @extend .button;
+    }
+
+    &__table {
+        width: 100%;
+        font-size: 12px;
+        line-height: 1.15;
+        font-weight: 500;
+    }
+
+    &__day {
+        padding: 5px;
+        border: solid 1px #dad0ba;
+        width: 14.28%;
+    }
+
+    &__day_wrap {
+        min-height: 100px;
+    }
+
+    &__day_number {
+        text-transform: uppercase;
+    }
+
+    &__event {
+        margin: 10px 0;
+    }
+
+    &__event_buttons {
+        margin: 25px 0;
+    }
+
+    &__event_back_button {
+        @extend .button;
+    }
+}
